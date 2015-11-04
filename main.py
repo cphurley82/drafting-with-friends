@@ -347,8 +347,8 @@ class DraftPage(MainHandler):
                 direction = 'Left'
             #figure out if the logged in user is also a drafter and give them 
             #their stuff, using a query or something else?
-            logging.error('drafter************************************')
-            logging.error(drafter)
+            # logging.error('drafter************************************')
+            # logging.error(drafter)
             if drafter:
                 if len(drafter.pack_keys) > 0:
                     pack = drafter.pack_keys[0].get()
@@ -376,7 +376,8 @@ class DraftPage(MainHandler):
                     is_coordinator = is_coordinator, 
                     drafter=drafter,
                     pack=pack,
-                    pool=pool)
+                    pool=pool,
+                    card_data=mtg.CardUtil().data())
 
     def post(self, draft_id):
         draft_key = ndb.Key('Draft', int(draft_id))

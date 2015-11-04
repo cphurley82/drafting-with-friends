@@ -54,12 +54,17 @@ class SetUtil:
     def data(cls):
         return cls.sets
 
-# class MtgCardUtil:
-#     def __init__(self):
-#         all_cards_data_file_path = os.path.join(os.path.dirname(__file__), 
-#             'AllCards-x.json')
-#         with open(all_cards_data_file_path) as all_cards_file:
-#             self.cards = json.load(all_cards_file)
+class CardUtil:
+    @classmethod
+    def __init__(cls):
+        all_cards_data_file_path = os.path.join(os.path.dirname(__file__), 
+            'AllCards.json')
+        with open(all_cards_data_file_path) as all_cards_file:
+            cls.cards = json.load(all_cards_file)
+
+    @classmethod
+    def data(cls):
+        return cls.cards
 
 setutil = SetUtil()
 
