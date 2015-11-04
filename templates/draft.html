@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="draft">
+    <div class="draft-heading">
+      <div class="draft-name">
+        Draft Name: {{draft.name}}
+      </div>
+
+      <div class="draft-created-date">
+        Created: {{draft.created.strftime("%b %d, %Y")}}
+      </div>
+      <div class="draft-modified-date">
+        Last Activity: {{draft.modified.strftime("%b %d, %Y")}}
+      </div>
+    </div>
+
+    <div class="packs">
+      Packs: 
+      {% for pack_name in draft.pack_codes %}
+        {{pack_name}} - {{set_data[pack_name].name}}, 
+      {% endfor %}
+    </div>
+
+    <div class="pack-num">
+      Pack# {{draft.pack_num}}
+    </div>
+
+    <div class="status">
+        Status: {{status}}
+    </div>
+
+    <div class="pass-direction">
+        Pass direction: {{direction}}
+    </div>
+
+    <div class="drafters">
+      Users: 
+      {% for user in draft.user_keys %}
+        {{user.get().name}}, 
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if status == 'waiting to start' %}
+    <form method="post">
+    {% if can_join %}
+      <div><input name="join_or_leave" type="submit" value="join"></div>
+    {% endif %}
+
+    {% if joined %}
+      <div><input name="join_or_leave" type="submit" value="leave"></div>
+    {% endif %}
+
+    {% if is_coordinator %}
+      <div><input name="start" type="submit" value="start"></div>
+    {% endif %}
+    </form>
+  {% endif %}
+
+  {% if pack %}
+    <div>Pack</div>
+    <form method="post">
+    {% for card in pack.cards %}
+      <input type="radio" name="pick" value="{{card}}">{{card}}<br>
+    {% endfor %}
+    <input name="pick" type="submit" value="pick">
+    </form>
+  {% endif %}
+  <br>
+  {% if pool %}
+    <div class="pool">Pool:</div>
+    {% for card in pool %}
+      {{card}}<br>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

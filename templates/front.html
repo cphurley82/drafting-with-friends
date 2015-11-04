@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <a href="/newdraft">Start New Draft</a>
+  <br>
+  Drafts waiting to join or start:
+  <br>
+  {% for id in setup_ids %}
+    <a href="/draft/{{id}}">{{id}}</a>
+    <br>
+  {% endfor %}
+  <br>
+  <br>
+  Drafts in progress:
+  <br>
+  {% for id in progress_ids %}
+    <a href="/draft/{{id}}">{{id}}</a>
+    <br>
+  {% endfor %}
+  <br>
+  <br>
+  Drafts completed:
+  <br>
+  {% for id in done_ids %}
+    <a href="/draft/{{id}}">{{id}}</a>
+    <br>
+  {% endfor %}
+  <br>
+  <br>
+{% endblock %}
