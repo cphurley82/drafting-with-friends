@@ -63,16 +63,7 @@
     <form method="post">
     {% for card in pack.cards %}
       <input type="radio" name="pick" value="{{card}}">{{card}}<br>
-      name: {{card}}<br>
-      manaCost: {{card_data[card].manaCost}}<br>
-      type: {{card_data[card].type}}<br>
-      text: {{card_data[card].text}}<br>
-      {% if 'power' in card_data[card] %}
-        power: {{card_data[card].power}}<br>
-      {% endif %}
-      {% if 'toughness' in card_data[card] %}
-        toughness: {{card_data[card].toughness}}<br>
-      {% endif %}
+      <img src="http://magiccards.info/scans/en/m12/{{card_details[card].number}}.jpg"><br><br>
     {% endfor %}
     <input name="pick" type="submit" value="pick">
     </form>

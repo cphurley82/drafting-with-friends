@@ -111,6 +111,10 @@ class Draft(ndb.Model):
             num_picks_queued += drafter_key.get().num_picks_queued
         return num_picks_queued
 
+    def get_current_set_code(self):
+        if self.pack_num >= 0 and self.pack_num < len(self.pack_codes):
+            return self.pack_codes[self.pack_num]
+
     num_picks_queued = property(fget=get_num_picks_queued)
 
 class Drafter(ndb.Model):
@@ -331,6 +335,7 @@ class DraftPage(MainHandler):
         pack = None
         pool = None
         drafter = None
+        set_code = None
 
         if self.user:
             drafter = self.lookup_drafter(user_key=self.user.key, 
@@ -341,6 +346,7 @@ class DraftPage(MainHandler):
         if draft.in_progress:
             status = 'in progress'
             can_join = False
+            set_code = draft.get_current_set_code()
             if draft.passing_right:
                 direction = 'Right'
             else:
@@ -365,6 +371,11 @@ class DraftPage(MainHandler):
         else:
             status = 'Completed'
 
+        card_details = {}
+        for card in pack.cards:
+            card_details[card] = mtg.SetUtil().get_card_details(
+                set_code=set_code, card_name=card)
+
         # logging.error(draft.drafters)
         self.render('draft.html', 
                     draft=draft, 
@@ -377,7 +388,8 @@ class DraftPage(MainHandler):
                     drafter=drafter,
                     pack=pack,
                     pool=pool,
-                    card_data=mtg.CardUtil().data())
+                    # card_data=mtg.CardUtil().data()
+                    card_details=card_details)
 
     def post(self, draft_id):
         draft_key = ndb.Key('Draft', int(draft_id))

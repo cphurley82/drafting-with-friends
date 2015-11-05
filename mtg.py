@@ -54,6 +54,12 @@ class SetUtil:
     def data(cls):
         return cls.sets
 
+    @classmethod
+    def get_card_details(cls, set_code, card_name):
+        for card in cls.sets[set_code]['cards']:
+            if card['name'] == card_name:
+                return card
+
 class CardUtil:
     @classmethod
     def __init__(cls):
