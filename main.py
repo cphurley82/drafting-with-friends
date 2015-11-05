@@ -372,9 +372,10 @@ class DraftPage(MainHandler):
             status = 'Completed'
 
         card_details = {}
-        for card in pack.cards:
-            card_details[card] = mtg.SetUtil().get_card_details(
-                set_code=set_code, card_name=card)
+        if pack:
+            for card in pack.cards:
+                card_details[card] = mtg.SetUtil().get_card_details(
+                    set_code=set_code, card_name=card)
 
         # logging.error(draft.drafters)
         self.render('draft.html', 
