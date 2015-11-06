@@ -112,8 +112,8 @@ class Draft(ndb.Model):
         return num_picks_queued
 
     def get_current_set_code(self):
-        if self.pack_num >= 0 and self.pack_num < len(self.pack_codes):
-            return self.pack_codes[self.pack_num]
+        if self.pack_num > 0 and self.pack_num <= len(self.pack_codes):
+            return self.pack_codes[self.pack_num-1]
 
     num_picks_queued = property(fget=get_num_picks_queued)
 
@@ -133,6 +133,9 @@ class Drafter(ndb.Model):
         return Drafter(user_key = user_key,
                        draft_key = draft_key,
                        position = position)
+
+    def get_num_packs_queued(self):
+        return len(self.pack_keys)
 
 class Pack(ndb.Model):
     draft_key = ndb.KeyProperty(required=True)
@@ -344,7 +347,7 @@ class DraftPage(MainHandler):
             pool = drafter.picked_cards
 
         if draft.in_progress:
-            status = 'in progress'
+            status = 'in_progress'
             can_join = False
             set_code = draft.get_current_set_code()
             if draft.passing_right:
@@ -360,7 +363,7 @@ class DraftPage(MainHandler):
                     pack = drafter.pack_keys[0].get()
 
         elif draft.pack_num == 0:
-            status = 'waiting to start'
+            status = 'waiting_to_start'
             if self.user:
                 can_join = True
                 if self.user.key in draft.user_keys:
@@ -369,16 +372,50 @@ class DraftPage(MainHandler):
                 if self.user.key == draft.coordinator_key:
                     is_coordinator = True
         else:
-            status = 'Completed'
+            status = 'completed'
+
+        draft_info = {'name':draft.name, 
+          'created':draft.created,
+          'modified':draft.modified,
+          'packs':[],
+          'pack_num':draft.pack_num,
+          # 'current_pack_code':draft.pack_codes[draft.pack_num],
+          'status':status,
+          'drafters':[]}
 
         card_details = {}
         if pack:
+            draft_info['pack'] = []
             for card in pack.cards:
+                logging.error(card)
+                logging.error(set_code)
+                
                 card_details[card] = mtg.SetUtil().get_card_details(
                     set_code=set_code, card_name=card)
+                draft_info['pack'].append(
+                    mtg.SetUtil().get_card_details(
+                        set_code=set_code, card_name=card))
+
+        for pack_code in draft.pack_codes:
+            draft_info['packs'].append(
+                {'code':pack_code, 
+                 'name':mtg.SetUtil().data()[pack_code]['name']} )
+
+        for drafter_key in draft.drafter_keys:
+            draft_info['drafters'].append(
+                {'name':drafter_key.get().user_key.get().name, 
+                 'num_packs':
+                 self.lookup_drafter(drafter_key.get().user_key, 
+                    draft_key).get_num_packs_queued()
+                 }
+                 )
+
+        if drafter:
+            draft_info['pool'] = drafter.picked_cards
 
         # logging.error(draft.drafters)
         self.render('draft.html', 
+                    draft_info=draft_info,
                     draft=draft, 
                     set_data=mtg.setutil.data(), 
                     status = status, 

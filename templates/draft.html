@@ -39,10 +39,15 @@
       {% for user in draft.user_keys %}
         {{user.get().name}}, 
       {% endfor %}
+      <br>
+      Drafters (#packs waiting):
+      {% for drafter in draft_info['drafters'] %}
+        {{drafter['name']}} ({{drafter['num_packs']}}), 
+      {% endfor %}
     </div>
   </div>
 
-  {% if status == 'waiting to start' %}
+  {% if status == 'waiting_to_start' %}
     <form method="post">
     {% if can_join %}
       <div><input name="join_or_leave" type="submit" value="join"></div>
