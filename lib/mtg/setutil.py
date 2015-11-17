@@ -6,10 +6,13 @@ import random
 class SetUtil:
     @classmethod
     def __init__(cls):
-        all_set_data_file_path = os.path.join(os.path.dirname(__file__), 
-            'm12_only.json')
-        with open(all_set_data_file_path) as all_sets_file:
-            cls.sets = json.load(all_sets_file)
+        cls.set_jsons = {'M12':'M12.json'}
+        cls.sets = {}
+        for set_code, file_name in cls.set_jsons.iteritems():
+            json_file_path = os.path.join(os.path.dirname(__file__), 
+                                          'set_data', file_name)
+            with open(json_file_path) as json_file:
+                cls.sets[set_code] = json.load(json_file)
 
     @classmethod
     def generate_booster(cls, set_code):
@@ -59,20 +62,6 @@ class SetUtil:
         for card in cls.sets[set_code]['cards']:
             if card['name'] == card_name:
                 return card
-
-class CardUtil:
-    @classmethod
-    def __init__(cls):
-        all_cards_data_file_path = os.path.join(os.path.dirname(__file__), 
-            'AllCards.json')
-        with open(all_cards_data_file_path) as all_cards_file:
-            cls.cards = json.load(all_cards_file)
-
-    @classmethod
-    def data(cls):
-        return cls.cards
-
-setutil = SetUtil()
 
 import unittest
 class TestSetUtil(unittest.TestCase):

@@ -12,14 +12,13 @@ import jinja2
 from lib.bcrypt import bcrypt
 from google.appengine.ext import ndb
 
-from lib.mtg import *
+from lib.mtg import setutil
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),
                                autoescape = True)
-all_set_data_file_path = os.path.join(os.path.dirname(__file__), 'm12_only.json')
-with open(all_set_data_file_path) as all_sets_file:
-    all_sets = json.load(all_sets_file)
+
+supported_sets = {'M12':{'name':'Magic 2012 Core Set'}}
 
 #### authentication stuff
 secret = 'secret goes here!'
@@ -300,7 +299,7 @@ class Logout(MainHandler):
 class NewDraft(MainHandler):
     def get(self):
         if self.user:
-            self.render('new-draft.html', sets = all_sets)
+            self.render('new-draft.html', sets = supported_sets)
         else:
             self.redirect('/login')
 
@@ -390,16 +389,16 @@ class DraftPage(MainHandler):
                 logging.error(card)
                 logging.error(set_code)
                 
-                card_details[card] = mtg.SetUtil().get_card_details(
+                card_details[card] = setutil.SetUtil().get_card_details(
                     set_code=set_code, card_name=card)
                 draft_info['pack'].append(
-                    mtg.SetUtil().get_card_details(
+                    setutil.SetUtil().get_card_details(
                         set_code=set_code, card_name=card))
 
         for pack_code in draft.pack_codes:
             draft_info['packs'].append(
                 {'code':pack_code, 
-                 'name':mtg.SetUtil().data()[pack_code]['name']} )
+                 'name':setutil.SetUtil().data()[pack_code]['name']} )
 
         for drafter_key in draft.drafter_keys:
             draft_info['drafters'].append(
@@ -417,7 +416,7 @@ class DraftPage(MainHandler):
         self.render('draft.html', 
                     draft_info=draft_info,
                     draft=draft, 
-                    set_data=mtg.setutil.data(), 
+                    set_data=setutil.SetUtil().data(), 
                     status = status, 
                     direction = direction, 
                     can_join = can_join, 
@@ -501,7 +500,7 @@ class DraftPage(MainHandler):
         pack_entities = []
         #get boosters for all the packs
         for pack_code in draft.pack_codes:
-            packs = mtg.setutil.generate_boosters(
+            packs = setutil.SetUtil().generate_boosters(
                 num=draft.num_drafters, 
                 set_code=pack_code)
             random.shuffle(packs)
