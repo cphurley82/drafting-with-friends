@@ -4,40 +4,40 @@
   <div class="draft">
     <div class="draft-heading">
       <div class="draft-name">
-        Draft Name: {{draft.name}}
+        Draft Name: {{draft_info.name}}
       </div>
 
       <div class="draft-created-date">
-        Created: {{draft.created.strftime("%b %d, %Y")}}
+        Created: {{draft_info.created.strftime("%b %d, %Y")}}
       </div>
       <div class="draft-modified-date">
-        Last Activity: {{draft.modified.strftime("%b %d, %Y")}}
+        Last Activity: {{draft_info.modified.strftime("%b %d, %Y")}}
       </div>
     </div>
 
     <div class="packs">
       Packs: 
-      {% for pack_name in draft.pack_codes %}
-        {{pack_name}} - {{set_data[pack_name].name}}, 
+      {% for pack in draft_info.packs %}
+        {{pack['code']}} - {{pack['name']}}, 
       {% endfor %}
     </div>
 
     <div class="pack-num">
-      Pack# {{draft.pack_num}}
+      Pack# {{draft_info.pack_num}}
     </div>
 
     <div class="status">
-        Status: {{status}}
+        Status: {{draft_info.status}}
     </div>
 
     <div class="pass-direction">
-        Pass direction: {{direction}}
+        Pass direction: {{draft_info.direction}}
     </div>
 
     <div class="drafters">
       Users: 
-      {% for user in draft.user_keys %}
-        {{user.get().name}}, 
+      {% for user in draft_info.users %}
+        {{user}}, 
       {% endfor %}
       <br>
       Drafters (#packs waiting):
@@ -63,20 +63,20 @@
     </form>
   {% endif %}
 
-  {% if pack %}
+  {% if draft_info.pack %}
     <div>Pack</div>
     <form method="post">
-    {% for card in pack.cards %}
-      <input type="radio" name="pick" value="{{card}}">{{card}}<br>
-      <img src="http://magiccards.info/scans/en/m12/{{card_details[card].number}}.jpg"><br><br>
+    {% for card in draft_info.pack %}
+      <input type="radio" name="pick" value="{{card.name}}">{{card.name}}<br>
+      <img src="http://magiccards.info/scans/en/m12/{{card.number}}.jpg"><br><br>
     {% endfor %}
     <input name="pick" type="submit" value="pick">
     </form>
   {% endif %}
   <br>
-  {% if pool %}
+  {% if draft_info.pool %}
     <div class="pool">Pool:</div>
-    {% for card in pool %}
+    {% for card in draft_info.pool %}
       {{card}}<br>
     {% endfor %}
   {% endif %}
