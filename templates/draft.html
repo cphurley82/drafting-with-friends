@@ -47,17 +47,17 @@
     </div>
   </div>
 
-  {% if status == 'waiting_to_start' %}
+  {% if draft_info.status == 'waiting_to_start' %}
     <form method="post">
-    {% if can_join %}
+    {% if draft_info.can_join %}
       <div><input name="join_or_leave" type="submit" value="join"></div>
     {% endif %}
 
-    {% if joined %}
+    {% if draft_info.joined %}
       <div><input name="join_or_leave" type="submit" value="leave"></div>
     {% endif %}
 
-    {% if is_coordinator %}
+    {% if draft_info.is_coordinator %}
       <div><input name="start" type="submit" value="start"></div>
     {% endif %}
     </form>

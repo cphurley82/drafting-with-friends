@@ -208,9 +208,9 @@ class DraftPage(MainHandler):
             self.error(404)
             return
 
-#         can_join = False
-#         joined = False
-#         is_coordinator = False
+        can_join = False
+        joined = False
+        is_coordinator = False
         status = 'None'
         direction = 'None'
 #         has_pack = False
@@ -243,13 +243,13 @@ class DraftPage(MainHandler):
 
         elif draft.pack_num == 0:
             status = 'waiting_to_start'
-#             if self.user:
-#                 can_join = True
-#                 if self.user.key in draft.user_keys:
-#                     joined = True
-#                     can_join = False
-#                 if self.user.key == draft.coordinator_key:
-#                     is_coordinator = True
+            if self.user:
+                can_join = True
+                if self.user.key in draft.user_keys:
+                    joined = True
+                    can_join = False
+                if self.user.key == draft.coordinator_key:
+                    is_coordinator = True
         else:
             status = 'completed'
 
@@ -262,6 +262,9 @@ class DraftPage(MainHandler):
           'status':status,
           'users':[],
           'drafters':[],
+          'can_join':can_join,
+          'joined':joined,
+          'is_coordinator':is_coordinator,
           }
         
         if direction:
