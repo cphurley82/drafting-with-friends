@@ -3,4 +3,4 @@ Dependencies:
 		from https://github.com/erlichmen/py-bcrypt
 		install:
 			cd lib
-			https://github.com/erlichmen/py-bcrypt.git bcrypt
+			git clone https://github.com/erlichmen/py-bcrypt.git bcrypt
