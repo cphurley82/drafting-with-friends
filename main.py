@@ -9,6 +9,6 @@ app = webapp2.WSGIApplication([
     ('/login', Login),
     ('/logout', Logout),
     ('/newdraft', NewDraft),
-    ('/draft/([0-9]+)?', DraftPage),
+    ('/draft/([0-9]+)(?:\.json)?', DraftPage),
     ], 
     debug=True)

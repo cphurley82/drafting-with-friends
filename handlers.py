@@ -253,9 +253,10 @@ class DraftPage(MainHandler):
         else:
             status = 'completed'
 
+        time_fmt = '%b %d, %Y'
         draft_info = {'name':draft.name, 
-          'created':draft.created,
-          'modified':draft.modified,
+          'created':draft.created.strftime(time_fmt),
+          'modified':draft.modified.strftime(time_fmt),
           'packs':[],
           'pack_num':draft.pack_num,
           # 'current_pack_code':draft.pack_codes[draft.pack_num],
@@ -314,21 +315,10 @@ class DraftPage(MainHandler):
             draft_info['pool'] = drafter.picked_cards
 
         # logging.error(draft.drafters)
-        self.render('draft.html', 
-                    draft_info=draft_info,
-#                     draft=draft, 
-                    set_data=SetUtil().data(), 
-#                     status = status, 
-#                     direction = direction, 
-#                     can_join = can_join, 
-#                     joined = joined, 
-#                     is_coordinator = is_coordinator, 
-#                     drafter=drafter,
-#                     pack=pack,
-#                     pool=pool,
-                    # card_data=mtg.CardUtil().data()
-#                     card_details=card_details,
-                    )
+        if self.format is 'json':
+            self.render_json(draft_info)
+        else:
+            self.render('draft.html', draft_info=draft_info)
 
     def post(self, draft_id):
         draft_key = ndb.Key('Draft', int(draft_id))
