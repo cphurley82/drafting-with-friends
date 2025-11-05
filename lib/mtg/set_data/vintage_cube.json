@@ -1,0 +1,1463 @@
+{
+  "code": "VCUBE",
+  "name": "Vintage Cube",
+  "booster": [
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube",
+    "cube"
+  ],
+  "cards": [
+    {
+      "name": "Balance",
+      "rarity": "cube"
+    },
+    {
+      "name": "Council's Judgment",
+      "rarity": "cube"
+    },
+    {
+      "name": "Swords to Plowshares",
+      "rarity": "cube"
+    },
+    {
+      "name": "Path to Exile",
+      "rarity": "cube"
+    },
+    {
+      "name": "Prismatic Ending",
+      "rarity": "cube"
+    },
+    {
+      "name": "Portable Hole",
+      "rarity": "cube"
+    },
+    {
+      "name": "Solitude",
+      "rarity": "cube"
+    },
+    {
+      "name": "March of Otherworldly Light",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fateful Absence",
+      "rarity": "cube"
+    },
+    {
+      "name": "Unexpectedly Absent",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thraben Inspector",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mother of Runes",
+      "rarity": "cube"
+    },
+    {
+      "name": "Giver of Runes",
+      "rarity": "cube"
+    },
+    {
+      "name": "Esper Sentinel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Stoneforge Mystic",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thalia, Guardian of Thraben",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thalia, Heretic Cathar",
+      "rarity": "cube"
+    },
+    {
+      "name": "Elite Spellbinder",
+      "rarity": "cube"
+    },
+    {
+      "name": "Adeline, Resplendent Cathar",
+      "rarity": "cube"
+    },
+    {
+      "name": "Seasoned Dungeoneer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lion Sash",
+      "rarity": "cube"
+    },
+    {
+      "name": "Luminarch Aspirant",
+      "rarity": "cube"
+    },
+    {
+      "name": "Blade Splicer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Flickerwisp",
+      "rarity": "cube"
+    },
+    {
+      "name": "Restoration Angel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Recruiter of the Guard",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ranger-Captain of Eos",
+      "rarity": "cube"
+    },
+    {
+      "name": "Skyclave Apparition",
+      "rarity": "cube"
+    },
+    {
+      "name": "Palace Jailer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sun Titan",
+      "rarity": "cube"
+    },
+    {
+      "name": "Gideon, Ally of Zendikar",
+      "rarity": "cube"
+    },
+    {
+      "name": "Gideon Jura",
+      "rarity": "cube"
+    },
+    {
+      "name": "Elspeth, Knight-Errant",
+      "rarity": "cube"
+    },
+    {
+      "name": "Elspeth, Sun's Champion",
+      "rarity": "cube"
+    },
+    {
+      "name": "Baneslayer Angel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Angel of Invention",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wrath of God",
+      "rarity": "cube"
+    },
+    {
+      "name": "Day of Judgment",
+      "rarity": "cube"
+    },
+    {
+      "name": "Armageddon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ravages of War",
+      "rarity": "cube"
+    },
+    {
+      "name": "Land Tax",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sevinne's Reclamation",
+      "rarity": "cube"
+    },
+    {
+      "name": "Spectral Procession",
+      "rarity": "cube"
+    },
+    {
+      "name": "Monastery Mentor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Cathar Commando",
+      "rarity": "cube"
+    },
+    {
+      "name": "Loran of the Third Path",
+      "rarity": "cube"
+    },
+    {
+      "name": "Containment Priest",
+      "rarity": "cube"
+    },
+    {
+      "name": "Serra Paragon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wall of Omens",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ranger of Eos",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ancestral Recall",
+      "rarity": "cube"
+    },
+    {
+      "name": "Time Walk",
+      "rarity": "cube"
+    },
+    {
+      "name": "Timetwister",
+      "rarity": "cube"
+    },
+    {
+      "name": "Brainstorm",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ponder",
+      "rarity": "cube"
+    },
+    {
+      "name": "Preordain",
+      "rarity": "cube"
+    },
+    {
+      "name": "Gitaxian Probe",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mental Misstep",
+      "rarity": "cube"
+    },
+    {
+      "name": "Spell Pierce",
+      "rarity": "cube"
+    },
+    {
+      "name": "Force of Will",
+      "rarity": "cube"
+    },
+    {
+      "name": "Force of Negation",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mana Drain",
+      "rarity": "cube"
+    },
+    {
+      "name": "Counterspell",
+      "rarity": "cube"
+    },
+    {
+      "name": "Daze",
+      "rarity": "cube"
+    },
+    {
+      "name": "Remand",
+      "rarity": "cube"
+    },
+    {
+      "name": "Memory Lapse",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mystic Confluence",
+      "rarity": "cube"
+    },
+    {
+      "name": "Cryptic Command",
+      "rarity": "cube"
+    },
+    {
+      "name": "Frantic Search",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fact or Fiction",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dig Through Time",
+      "rarity": "cube"
+    },
+    {
+      "name": "Treasure Cruise",
+      "rarity": "cube"
+    },
+    {
+      "name": "Impulse",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mystical Tutor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Merchant Scroll",
+      "rarity": "cube"
+    },
+    {
+      "name": "High Tide",
+      "rarity": "cube"
+    },
+    {
+      "name": "Time Spiral",
+      "rarity": "cube"
+    },
+    {
+      "name": "Upheaval",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tinker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Show and Tell",
+      "rarity": "cube"
+    },
+    {
+      "name": "Snapcaster Mage",
+      "rarity": "cube"
+    },
+    {
+      "name": "Torrential Gearhulk",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hullbreacher",
+      "rarity": "cube"
+    },
+    {
+      "name": "True-Name Nemesis",
+      "rarity": "cube"
+    },
+    {
+      "name": "Vendilion Clique",
+      "rarity": "cube"
+    },
+    {
+      "name": "Brazen Borrower",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hullbreaker Horror",
+      "rarity": "cube"
+    },
+    {
+      "name": "Consecrated Sphinx",
+      "rarity": "cube"
+    },
+    {
+      "name": "Shark Typhoon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Narset, Parter of Veils",
+      "rarity": "cube"
+    },
+    {
+      "name": "Jace, the Mind Sculptor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Jace, Wielder of Mysteries",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thirst for Knowledge",
+      "rarity": "cube"
+    },
+    {
+      "name": "Chart a Course",
+      "rarity": "cube"
+    },
+    {
+      "name": "Compulsive Research",
+      "rarity": "cube"
+    },
+    {
+      "name": "Control Magic",
+      "rarity": "cube"
+    },
+    {
+      "name": "Vedalken Shackles",
+      "rarity": "cube"
+    },
+    {
+      "name": "Glen Elendra Archmage",
+      "rarity": "cube"
+    },
+    {
+      "name": "Teferi, Master of Time",
+      "rarity": "cube"
+    },
+    {
+      "name": "Brain Freeze",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dark Ritual",
+      "rarity": "cube"
+    },
+    {
+      "name": "Cabal Ritual",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thoughtseize",
+      "rarity": "cube"
+    },
+    {
+      "name": "Inquisition of Kozilek",
+      "rarity": "cube"
+    },
+    {
+      "name": "Duress",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hymn to Tourach",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fatal Push",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bloodchief's Thirst",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dismember",
+      "rarity": "cube"
+    },
+    {
+      "name": "Go for the Throat",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hero's Downfall",
+      "rarity": "cube"
+    },
+    {
+      "name": "Murderous Rider",
+      "rarity": "cube"
+    },
+    {
+      "name": "Damnation",
+      "rarity": "cube"
+    },
+    {
+      "name": "Toxic Deluge",
+      "rarity": "cube"
+    },
+    {
+      "name": "Yawgmoth's Will",
+      "rarity": "cube"
+    },
+    {
+      "name": "Yawgmoth, Thran Physician",
+      "rarity": "cube"
+    },
+    {
+      "name": "Demonic Tutor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Vampiric Tutor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Imperial Seal",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dark Petition",
+      "rarity": "cube"
+    },
+    {
+      "name": "Reanimate",
+      "rarity": "cube"
+    },
+    {
+      "name": "Exhume",
+      "rarity": "cube"
+    },
+    {
+      "name": "Animate Dead",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dance of the Dead",
+      "rarity": "cube"
+    },
+    {
+      "name": "Necromancy",
+      "rarity": "cube"
+    },
+    {
+      "name": "Entomb",
+      "rarity": "cube"
+    },
+    {
+      "name": "Buried Alive",
+      "rarity": "cube"
+    },
+    {
+      "name": "Griselbrand",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sheoldred, the Apocalypse",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sheoldred, Whispering One",
+      "rarity": "cube"
+    },
+    {
+      "name": "Massacre Wurm",
+      "rarity": "cube"
+    },
+    {
+      "name": "Grave Titan",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kokusho, the Evening Star",
+      "rarity": "cube"
+    },
+    {
+      "name": "Razaketh, the Foulblooded",
+      "rarity": "cube"
+    },
+    {
+      "name": "Archon of Cruelty",
+      "rarity": "cube"
+    },
+    {
+      "name": "Braids, Arisen Nightmare",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fleshbag Marauder",
+      "rarity": "cube"
+    },
+    {
+      "name": "Rankle, Master of Pranks",
+      "rarity": "cube"
+    },
+    {
+      "name": "Pack Rat",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bloodghast",
+      "rarity": "cube"
+    },
+    {
+      "name": "Geralf's Messenger",
+      "rarity": "cube"
+    },
+    {
+      "name": "Phyrexian Obliterator",
+      "rarity": "cube"
+    },
+    {
+      "name": "Liliana of the Veil",
+      "rarity": "cube"
+    },
+    {
+      "name": "Liliana, the Last Hope",
+      "rarity": "cube"
+    },
+    {
+      "name": "Liliana, Dreadhorde General",
+      "rarity": "cube"
+    },
+    {
+      "name": "Necropotence",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bolas's Citadel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tendrils of Agony",
+      "rarity": "cube"
+    },
+    {
+      "name": "Night's Whisper",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sign in Blood",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lightning Bolt",
+      "rarity": "cube"
+    },
+    {
+      "name": "Chain Lightning",
+      "rarity": "cube"
+    },
+    {
+      "name": "Rift Bolt",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lava Dart",
+      "rarity": "cube"
+    },
+    {
+      "name": "Burst Lightning",
+      "rarity": "cube"
+    },
+    {
+      "name": "Firebolt",
+      "rarity": "cube"
+    },
+    {
+      "name": "Incinerate",
+      "rarity": "cube"
+    },
+    {
+      "name": "Searing Spear",
+      "rarity": "cube"
+    },
+    {
+      "name": "Magma Jet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lightning Axe",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fireblast",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sulfuric Vortex",
+      "rarity": "cube"
+    },
+    {
+      "name": "Eidolon of the Great Revel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Monastery Swiftspear",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ragavan, Nimble Pilferer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Goblin Guide",
+      "rarity": "cube"
+    },
+    {
+      "name": "Zurgo Bellstriker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kari Zev, Skyship Raider",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bonecrusher Giant",
+      "rarity": "cube"
+    },
+    {
+      "name": "Seasoned Pyromancer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Glorybringer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Chandra, Torch of Defiance",
+      "rarity": "cube"
+    },
+    {
+      "name": "Chandra, Awakened Inferno",
+      "rarity": "cube"
+    },
+    {
+      "name": "Koth of the Hammer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Embercleave",
+      "rarity": "cube"
+    },
+    {
+      "name": "Inferno Titan",
+      "rarity": "cube"
+    },
+    {
+      "name": "Siege-Gang Commander",
+      "rarity": "cube"
+    },
+    {
+      "name": "Goblin Rabblemaster",
+      "rarity": "cube"
+    },
+    {
+      "name": "Legion Warboss",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fable of the Mirror-Breaker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sneak Attack",
+      "rarity": "cube"
+    },
+    {
+      "name": "Through the Breach",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kiki-Jiki, Mirror Breaker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Zealous Conscripts",
+      "rarity": "cube"
+    },
+    {
+      "name": "Splinter Twin",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dualcaster Mage",
+      "rarity": "cube"
+    },
+    {
+      "name": "Imperial Recruiter",
+      "rarity": "cube"
+    },
+    {
+      "name": "Faithless Looting",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wheel of Fortune",
+      "rarity": "cube"
+    },
+    {
+      "name": "Burning of Xinye",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wildfire",
+      "rarity": "cube"
+    },
+    {
+      "name": "Firestorm",
+      "rarity": "cube"
+    },
+    {
+      "name": "Pyretic Ritual",
+      "rarity": "cube"
+    },
+    {
+      "name": "Seething Song",
+      "rarity": "cube"
+    },
+    {
+      "name": "Manamorphose",
+      "rarity": "cube"
+    },
+    {
+      "name": "Goblin Welder",
+      "rarity": "cube"
+    },
+    {
+      "name": "Goblin Engineer",
+      "rarity": "cube"
+    },
+    {
+      "name": "Daretti, Scrap Savant",
+      "rarity": "cube"
+    },
+    {
+      "name": "Magus of the Moon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Blood Moon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Llanowar Elves",
+      "rarity": "cube"
+    },
+    {
+      "name": "Elvish Mystic",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fyndhorn Elves",
+      "rarity": "cube"
+    },
+    {
+      "name": "Birds of Paradise",
+      "rarity": "cube"
+    },
+    {
+      "name": "Noble Hierarch",
+      "rarity": "cube"
+    },
+    {
+      "name": "Elves of Deep Shadow",
+      "rarity": "cube"
+    },
+    {
+      "name": "Utopia Sprawl",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wild Growth",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lotus Cobra",
+      "rarity": "cube"
+    },
+    {
+      "name": "Devoted Druid",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wall of Roots",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sakura-Tribe Elder",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sylvan Caryatid",
+      "rarity": "cube"
+    },
+    {
+      "name": "Courser of Kruphix",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tireless Tracker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tireless Provisioner",
+      "rarity": "cube"
+    },
+    {
+      "name": "Scavenging Ooze",
+      "rarity": "cube"
+    },
+    {
+      "name": "Eternal Witness",
+      "rarity": "cube"
+    },
+    {
+      "name": "Regrowth",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sylvan Library",
+      "rarity": "cube"
+    },
+    {
+      "name": "Survival of the Fittest",
+      "rarity": "cube"
+    },
+    {
+      "name": "Natural Order",
+      "rarity": "cube"
+    },
+    {
+      "name": "Green Sun's Zenith",
+      "rarity": "cube"
+    },
+    {
+      "name": "Finale of Devastation",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tooth and Nail",
+      "rarity": "cube"
+    },
+    {
+      "name": "Channel",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fastbond",
+      "rarity": "cube"
+    },
+    {
+      "name": "Exploration",
+      "rarity": "cube"
+    },
+    {
+      "name": "Rofellos, Llanowar Emissary",
+      "rarity": "cube"
+    },
+    {
+      "name": "Oracle of Mul Daya",
+      "rarity": "cube"
+    },
+    {
+      "name": "Nissa, Who Shakes the World",
+      "rarity": "cube"
+    },
+    {
+      "name": "Nissa, Vital Force",
+      "rarity": "cube"
+    },
+    {
+      "name": "Garruk Wildspeaker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Garruk Relentless",
+      "rarity": "cube"
+    },
+    {
+      "name": "Questing Beast",
+      "rarity": "cube"
+    },
+    {
+      "name": "Craterhoof Behemoth",
+      "rarity": "cube"
+    },
+    {
+      "name": "Primeval Titan",
+      "rarity": "cube"
+    },
+    {
+      "name": "Avenger of Zendikar",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hornet Queen",
+      "rarity": "cube"
+    },
+    {
+      "name": "Titania, Protector of Argoth",
+      "rarity": "cube"
+    },
+    {
+      "name": "Endurance",
+      "rarity": "cube"
+    },
+    {
+      "name": "Force of Vigor",
+      "rarity": "cube"
+    },
+    {
+      "name": "Beast Within",
+      "rarity": "cube"
+    },
+    {
+      "name": "Song of the Dryads",
+      "rarity": "cube"
+    },
+    {
+      "name": "Eureka",
+      "rarity": "cube"
+    },
+    {
+      "name": "Harmonize",
+      "rarity": "cube"
+    },
+    {
+      "name": "Vorinclex, Monstrous Raider",
+      "rarity": "cube"
+    },
+    {
+      "name": "Old-Growth Troll",
+      "rarity": "cube"
+    },
+    {
+      "name": "Carnage Tyrant",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fierce Empath",
+      "rarity": "cube"
+    },
+    {
+      "name": "Black Lotus",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mox Pearl",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mox Sapphire",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mox Jet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mox Ruby",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mox Emerald",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sol Ring",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mana Crypt",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mana Vault",
+      "rarity": "cube"
+    },
+    {
+      "name": "Grim Monolith",
+      "rarity": "cube"
+    },
+    {
+      "name": "Basalt Monolith",
+      "rarity": "cube"
+    },
+    {
+      "name": "Thran Dynamo",
+      "rarity": "cube"
+    },
+    {
+      "name": "Worn Powerstone",
+      "rarity": "cube"
+    },
+    {
+      "name": "Arcane Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Talisman of Dominance",
+      "rarity": "cube"
+    },
+    {
+      "name": "Talisman of Impulse",
+      "rarity": "cube"
+    },
+    {
+      "name": "Talisman of Progress",
+      "rarity": "cube"
+    },
+    {
+      "name": "Talisman of Creativity",
+      "rarity": "cube"
+    },
+    {
+      "name": "Azorius Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Izzet Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dimir Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Rakdos Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Simic Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Golgari Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Boros Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Orzhov Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Gruul Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Selesnya Signet",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sensei's Divining Top",
+      "rarity": "cube"
+    },
+    {
+      "name": "Skullclamp",
+      "rarity": "cube"
+    },
+    {
+      "name": "Umezawa's Jitte",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sword of Fire and Ice",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sword of Feast and Famine",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sword of Light and Shadow",
+      "rarity": "cube"
+    },
+    {
+      "name": "Batterskull",
+      "rarity": "cube"
+    },
+    {
+      "name": "Smuggler's Copter",
+      "rarity": "cube"
+    },
+    {
+      "name": "Walking Ballista",
+      "rarity": "cube"
+    },
+    {
+      "name": "Hangarback Walker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Metalworker",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lodestone Golem",
+      "rarity": "cube"
+    },
+    {
+      "name": "Trinisphere",
+      "rarity": "cube"
+    },
+    {
+      "name": "Winter Orb",
+      "rarity": "cube"
+    },
+    {
+      "name": "Memory Jar",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mindslaver",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sundering Titan",
+      "rarity": "cube"
+    },
+    {
+      "name": "Blightsteel Colossus",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ulamog, the Ceaseless Hunger",
+      "rarity": "cube"
+    },
+    {
+      "name": "Emrakul, the Aeons Torn",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kozilek, Butcher of Truth",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ugin, the Spirit Dragon",
+      "rarity": "cube"
+    },
+    {
+      "name": "Karn Liberated",
+      "rarity": "cube"
+    },
+    {
+      "name": "Karn, Scion of Urza",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wurmcoil Engine",
+      "rarity": "cube"
+    },
+    {
+      "name": "Sword of War and Peace",
+      "rarity": "cube"
+    },
+    {
+      "name": "Phyrexian Metamorph",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lightning Greaves",
+      "rarity": "cube"
+    },
+    {
+      "name": "Staff of Domination",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mishra's Bauble",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lotus Petal",
+      "rarity": "cube"
+    },
+    {
+      "name": "Isochron Scepter",
+      "rarity": "cube"
+    },
+    {
+      "name": "Polluted Delta",
+      "rarity": "cube"
+    },
+    {
+      "name": "Flooded Strand",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bloodstained Mire",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wooded Foothills",
+      "rarity": "cube"
+    },
+    {
+      "name": "Windswept Heath",
+      "rarity": "cube"
+    },
+    {
+      "name": "Misty Rainforest",
+      "rarity": "cube"
+    },
+    {
+      "name": "Scalding Tarn",
+      "rarity": "cube"
+    },
+    {
+      "name": "Arid Mesa",
+      "rarity": "cube"
+    },
+    {
+      "name": "Marsh Flats",
+      "rarity": "cube"
+    },
+    {
+      "name": "Verdant Catacombs",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tundra",
+      "rarity": "cube"
+    },
+    {
+      "name": "Underground Sea",
+      "rarity": "cube"
+    },
+    {
+      "name": "Volcanic Island",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tropical Island",
+      "rarity": "cube"
+    },
+    {
+      "name": "Bayou",
+      "rarity": "cube"
+    },
+    {
+      "name": "Savannah",
+      "rarity": "cube"
+    },
+    {
+      "name": "Scrubland",
+      "rarity": "cube"
+    },
+    {
+      "name": "Taiga",
+      "rarity": "cube"
+    },
+    {
+      "name": "Plateau",
+      "rarity": "cube"
+    },
+    {
+      "name": "Badlands",
+      "rarity": "cube"
+    },
+    {
+      "name": "Ancient Tomb",
+      "rarity": "cube"
+    },
+    {
+      "name": "City of Traitors",
+      "rarity": "cube"
+    },
+    {
+      "name": "Karakas",
+      "rarity": "cube"
+    },
+    {
+      "name": "Library of Alexandria",
+      "rarity": "cube"
+    },
+    {
+      "name": "Strip Mine",
+      "rarity": "cube"
+    },
+    {
+      "name": "Wasteland",
+      "rarity": "cube"
+    },
+    {
+      "name": "Mishra's Workshop",
+      "rarity": "cube"
+    },
+    {
+      "name": "Tolarian Academy",
+      "rarity": "cube"
+    },
+    {
+      "name": "Urza's Saga",
+      "rarity": "cube"
+    },
+    {
+      "name": "Field of the Dead",
+      "rarity": "cube"
+    },
+    {
+      "name": "Oko, Thief of Crowns",
+      "rarity": "cube"
+    },
+    {
+      "name": "Teferi, Time Raveler",
+      "rarity": "cube"
+    },
+    {
+      "name": "Teferi, Hero of Dominaria",
+      "rarity": "cube"
+    },
+    {
+      "name": "Leovold, Emissary of Trest",
+      "rarity": "cube"
+    },
+    {
+      "name": "Uro, Titan of Nature's Wrath",
+      "rarity": "cube"
+    },
+    {
+      "name": "Omnath, Locus of Creation",
+      "rarity": "cube"
+    },
+    {
+      "name": "Dack Fayden",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kolaghan's Command",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lightning Helix",
+      "rarity": "cube"
+    },
+    {
+      "name": "Fractured Identity",
+      "rarity": "cube"
+    },
+    {
+      "name": "Supreme Verdict",
+      "rarity": "cube"
+    },
+    {
+      "name": "Lingering Souls",
+      "rarity": "cube"
+    },
+    {
+      "name": "Vindicate",
+      "rarity": "cube"
+    },
+    {
+      "name": "Abrupt Decay",
+      "rarity": "cube"
+    },
+    {
+      "name": "Assassin's Trophy",
+      "rarity": "cube"
+    },
+    {
+      "name": "Deathrite Shaman",
+      "rarity": "cube"
+    },
+    {
+      "name": "Expressive Iteration",
+      "rarity": "cube"
+    },
+    {
+      "name": "Kess, Dissident Mage",
+      "rarity": "cube"
+    },
+    {
+      "name": "Siege Rhino",
+      "rarity": "cube"
+    },
+    {
+      "name": "Niv-Mizzet Reborn",
+      "rarity": "cube"
+    }
+  ]
+}

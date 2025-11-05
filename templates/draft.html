@@ -30,14 +30,19 @@
         Status: {{draft_info.status}}
     </div>
 
-    <div class="pass-direction">
-        Pass direction: {{draft_info.direction}}
-    </div>
+    {% if draft_info.status == 'in_progress' %}
+      <div class="pass-direction">
+          Pass direction: {{draft_info.direction}}
+      </div>
+      <div class="pick-size">
+          Pick size: {{draft_info.pick_size}}
+      </div>
+    {% endif %}
 
     <div class="drafters">
-      Users: 
+      Users:
       {% for user in draft_info.users %}
-        {{user}}, 
+        {{user}},
       {% endfor %}
       <br>
       Drafters (#packs waiting):
@@ -65,13 +70,21 @@
 
   {% if draft_info.pack %}
     <div>Pack</div>
+    <p>Select {{ draft_info.pick_size }} card{% if draft_info.pick_size > 1 %}s{% endif %}.</p>
     <form method="post">
-    {% for card in draft_info.pack %}
-      <input type="radio" name="pick" value="{{card.name}}">{{card.name}}<br>
-      <img src="http://magiccards.info/scans/en/m12/{{card.number}}.jpg"><br><br>
-    {% endfor %}
-    <input name="pick" type="submit" value="pick">
+      {% for card in draft_info.pack %}
+        <label>
+          <input type="checkbox" name="pick" value="{{card.name}}"> {{card.name}}
+        </label>
+        {% if card.image_url %}
+          <div><img class="card-image" src="{{card.image_url}}" alt="{{card.name}}"></div>
+        {% endif %}
+        <br>
+      {% endfor %}
+      <input name="pick" type="submit" value="Submit pick">
     </form>
+  {% elif draft_info.status == 'in_progress' and draft_info.joined %}
+    <p>You do not currently have a pack.</p>
   {% endif %}
   <br>
   {% if draft_info.pool %}

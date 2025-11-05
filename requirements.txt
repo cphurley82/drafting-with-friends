@@ -1,0 +1,5 @@
+flask>=3.0
+sqlalchemy>=2.0
+passlib[bcrypt]>=1.7
+pg8000>=1.29
+gunicorn>=21.2

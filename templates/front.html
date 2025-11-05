@@ -1,30 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <a href="/newdraft">Start New Draft</a>
-  <br>
-  Drafts waiting to join or start:
-  <br>
-  {% for id in setup_ids %}
-    <a href="/draft/{{id}}">{{id}}</a>
-    <br>
-  {% endfor %}
-  <br>
-  <br>
-  Drafts in progress:
-  <br>
-  {% for id in progress_ids %}
-    <a href="/draft/{{id}}">{{id}}</a>
-    <br>
-  {% endfor %}
-  <br>
-  <br>
-  Drafts completed:
-  <br>
-  {% for id in done_ids %}
-    <a href="/draft/{{id}}">{{id}}</a>
-    <br>
-  {% endfor %}
-  <br>
-  <br>
+  <a href="{{ url_for('newdraft') }}">Start New Draft</a>
+  <h2>Drafts waiting to join or start</h2>
+  {% if setup_drafts %}
+    <ul>
+      {% for draft in setup_drafts %}
+        <li>
+          <a href="{{ url_for('draft_page', draft_id=draft.id) }}">{{ draft.name }} ({{ draft.id }})</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No drafts are currently waiting to start.</p>
+  {% endif %}
+
+  <h2>Drafts in progress</h2>
+  {% if progress_drafts %}
+    <ul>
+      {% for draft in progress_drafts %}
+        <li>
+          <a href="{{ url_for('draft_page', draft_id=draft.id) }}">{{ draft.name }} ({{ draft.id }})</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No drafts are currently underway.</p>
+  {% endif %}
+
+  <h2>Completed drafts</h2>
+  {% if done_drafts %}
+    <ul>
+      {% for draft in done_drafts %}
+        <li>
+          <a href="{{ url_for('draft_page', draft_id=draft.id) }}">{{ draft.name }} ({{ draft.id }})</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No drafts have been completed yet.</p>
+  {% endif %}
 {% endblock %}
